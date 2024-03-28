@@ -1,2 +1,2 @@
 ## CEH Practical notes
-[Scanning - nmaptekst_linku](nmap.md)
+[Scanning - nmap](nmap.md)
