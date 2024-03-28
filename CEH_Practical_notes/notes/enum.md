@@ -8,6 +8,6 @@ SNMP enum using nmap-  `nmap -sU -p 161 10.10.10.10 (-p 161 is port for SNMP)-->
                        `snmp-check 10.10.10.10 ( It will show user accounts, processes etc) --> for parrot`
 
 DNS recon/enum-  `dnsrecon -d www.google.com -z`
-e
+
 NetBios enum using enum4linux- 	`enum4linux -u martin -p apple -n 10.10.10.10 (all info)`
 				  				`enum4linux -u martin -p apple -P 10.10.10.10 (policy info)` 
