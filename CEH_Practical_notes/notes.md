@@ -2,11 +2,11 @@
 
 *Target Specification*
 
-nmap 192.168.1.1				Scan a single IP<br>
-nmap 192.168.1.1 192.168.2.1	Scan specific IPs<br>
-nmap 192.168.1.1-254	        Scan a range<br>
-nmap scanme.nmap.org	        Scan a domain<br>
-nmap 192.168.1.0/24	            Scan using CIDR notation<br>
+nmap 192.168.1.1				`Scan a single IP<br>`
+nmap 192.168.1.1 192.168.2.1	`Scan specific IPs<br>`
+nmap 192.168.1.1-254	        `Scan a range<br>`
+nmap scanme.nmap.org	        `Scan a domain<br>`
+nmap 192.168.1.0/24	            `Scan using CIDR notation<br>`
 
 -iL	nmap -iL targets.txt	            Scan targets from a file<br>
 -iR	nmap -iR 100	                    Scan 100 random hosts<br>
