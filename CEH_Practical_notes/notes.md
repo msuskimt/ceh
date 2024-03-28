@@ -2,7 +2,7 @@
 
 *Target Specification*
 
-nmap 192.168.1.1	            Scan a single IP<br>
+nmap 192.168.1.1				Scan a single IP<br>
 nmap 192.168.1.1 192.168.2.1	Scan specific IPs<br>
 nmap 192.168.1.1-254	        Scan a range<br>
 nmap scanme.nmap.org	        Scan a domain<br>
