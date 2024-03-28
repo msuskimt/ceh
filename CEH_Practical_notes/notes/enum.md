@@ -17,7 +17,7 @@ dnsrecon -d www.google.com -z `DNS recon/enum`
 
 ### WINDOWS cmd stuff
 
-`systeminfo
+```systeminfo
 net users #All users\
 dir /b /ad "C:\Users" #directory list\
 net user %username% #Info about a user (me)\
@@ -26,7 +26,6 @@ wmic USERACCOUNT Get Domain,Name,Sid\
 net user /add [username] [password] #Create user\
 qwinsta Anyone else logged in?\
 runas /netonly /user<DOMAIN>\<NAME> "cmd.exe" ::The password will be prompted #Lauch new cmd.exe with new creds (to impersonate in network)
-
 Local:
 net localgroup #All available groups\
 net localgroup Administrators #Info about a group (admins)\
