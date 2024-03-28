@@ -1,3 +1,4 @@
 ## CEH Practical notes
-[Scanning - nmap](notes/nmap.md)
-[Enumeration](notes/enum.md)
+
+1. [Scanning - nmap](notes/nmap.md)
+2. [Enumeration](notes/enum.md)
