@@ -27,23 +27,23 @@ dnsrecon -d www.google.com -z `DNS recon/enum`
 - qwinsta `Anyone else logged in?`
 - runas /netonly /user<DOMAIN>\<NAME> "cmd.exe" `::The password will be prompted #Lauch new cmd.exe with new creds (to impersonate in network)`
 
-1. Local:
+`1. Local:`
 - net localgroup `All available groups`
 - net localgroup Administrators `Info about a group (admins)`
 - net localgroup administrators [username] /add `Add user to administrators`
 
-2. Domain:
+`2. Domain:`
 - net group /domain `info about domain groups`
 - net group /domain <domain_group_name> `Users that belongs to the group`
 
-3. Net
+`3. Net`
 - route print `Print available routes`
 - arp -a `Know hosts`
 - netstat -ano `opened ports`
 - type C:\WINDOWS\System32\drivers\etc\hosts `local dns`
 - ipconfig /displaydns | findstr "Record" | findstr "Name Host" `local dns and hosts`
-4. Shares
 
+`4. Shares`
 - net view `Get a list of computers`
 - net view /all /domain [domainname] `Shares on the domains`
 - net view \\computer /ALL `List shares of a computer`
