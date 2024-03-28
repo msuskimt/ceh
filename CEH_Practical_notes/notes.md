@@ -23,7 +23,7 @@ nmap 192.168.1.0/24	            `Scan using CIDR notation`<br>
 
 **Host Discovery**
 
--sL	nmap 192.168.1.1-3 -sL	No Scan. List targets only
+-sL	nmap 192.168.1.1-3 -sL	No Scan. List targets only 
 -sn	nmap 192.168.1.1/24 -sn	Disable port scanning. Host discovery only.
 -Pn	nmap 192.168.1.1-5 -Pn	Disable host discovery. Port scan only.
 -PS	nmap 192.168.1.1-5 -PS22-25,80	TCP SYN discovery on port x. Port 80 by default
