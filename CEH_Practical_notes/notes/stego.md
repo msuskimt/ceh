@@ -8,5 +8,5 @@ snow -C -m "My swiss account number is 121212121212" -p "magic" readme.txt readm
 
 `Snow - display`
 
-snow -C -p "magic" readme2.txt [content of readme2.txt]
+snow -C -p "magic" readme2.txt [comment][content of readme2.txt]
 
