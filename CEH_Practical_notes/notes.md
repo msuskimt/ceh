@@ -1,6 +1,6 @@
-# SCANNING `nmap`
+## SCANNING `nmap`
 
-## Target Specification
+### Target Specification
 
 nmap 192.168.1.1				`Scan a single IP`<br>
 nmap 192.168.1.1 192.168.2.1	`Scan specific IPs`<br>
@@ -12,7 +12,7 @@ nmap 192.168.1.0/24	            `Scan using CIDR notation`<br>
 -iR	nmap -iR 100	                    Scan 100 random hosts<br>
 -exclude	nmap -exclude 192.168.1.1	Exclude listed hosts<br>
 
-**Nmap Scan Techniques**
+### Nmap Scan Techniques
 
 -sS	nmap 192.168.1.1 -sS	TCP SYN port scan (Default)<br>
 -sT	nmap 192.168.1.1 -sT	TCP connect port scan (Default without root privilege)<br>
@@ -21,9 +21,10 @@ nmap 192.168.1.0/24	            `Scan using CIDR notation`<br>
 -sW	nmap 192.168.1.1 -sW	TCP Window port scan<br>
 -sM	nmap 192.168.1.1 -sM	TCP Maimon port scan<br>
 
-**Host Discovery**
+### Host Discovery
 
--sL	nmap 192.168.1.1-3 -sL	No Scan. List targets only 
+-sL	nmap 192.168.1.1-3 -sL	No Scan. List targets only
+
 -sn	nmap 192.168.1.1/24 -sn	Disable port scanning. Host discovery only.
 -Pn	nmap 192.168.1.1-5 -Pn	Disable host discovery. Port scan only.
 -PS	nmap 192.168.1.1-5 -PS22-25,80	TCP SYN discovery on port x. Port 80 by default
@@ -32,7 +33,7 @@ nmap 192.168.1.0/24	            `Scan using CIDR notation`<br>
 -PR	nmap 192.168.1.1-1/24 -PR	ARP discovery on local network
 -n	nmap 192.168.1.1 -n	Never do DNS resolution
 
-#Port Specification#
+### Port Specification
 
 -p	nmap 192.168.1.1 -p 21	Port scan for port x
 -p	nmap 192.168.1.1 -p 21-100	Port range
