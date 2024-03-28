@@ -34,14 +34,14 @@ dnsrecon -d www.google.com -z `DNS recon/enum`
 
 2. Domain:
 - net group /domain `info about domain groups`
-- net group /domain <domain_group_name> `Users that belongs to the group`
-<br>
+- net group /domain <domain_group_name> `Users that belongs to the group`<br>
+
 - route print `Print available routes`
 - arp -a `Know hosts`
 - netstat -ano `opened ports`
 - type C:\WINDOWS\System32\drivers\etc\hosts `local dns`
-- ipconfig /displaydns | findstr "Record" | findstr "Name Host" `local dns and hosts`
-<br>
+- ipconfig /displaydns | findstr "Record" | findstr "Name Host" `local dns and hosts`<br>
+
 - net view `Get a list of computers`
 - net view /all /domain [domainname] `Shares on the domains`
 - net view \\computer /ALL `List shares of a computer`
