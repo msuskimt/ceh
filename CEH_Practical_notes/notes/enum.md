@@ -18,7 +18,9 @@ dnsrecon -d www.google.com -z `DNS recon/enum`
 ### WINDOWS cmd stuff
 
 ```systeminfo
-net users #"All users"
+net users 
+
+#All users
 dir /b /ad "C:\Users" # directory list
 net user %username% #Info about a user (me)
 net accounts #Information about password requirements
