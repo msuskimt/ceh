@@ -1,6 +1,6 @@
 # SCANNING `nmap`
 
-##Target Specification
+## Target Specification
 
 nmap 192.168.1.1				`Scan a single IP`<br>
 nmap 192.168.1.1 192.168.2.1	`Scan specific IPs`<br>
