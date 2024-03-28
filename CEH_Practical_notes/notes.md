@@ -32,7 +32,7 @@ nmap 192.168.1.0/24	            `Scan using CIDR notation`<br>
 -PR	nmap 192.168.1.1-1/24 -PR	ARP discovery on local network
 -n	nmap 192.168.1.1 -n	Never do DNS resolution
 
-Port Specification
+#Port Specification
 
 -p	nmap 192.168.1.1 -p 21	Port scan for port x
 -p	nmap 192.168.1.1 -p 21-100	Port range
