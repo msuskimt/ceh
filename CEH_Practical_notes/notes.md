@@ -1,2 +1,2 @@
 ## CEH Practical notes
-[Scanning - nmap](nmap.md)
+[Scanning - nmap](notes/nmap.md)
