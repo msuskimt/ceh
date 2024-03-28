@@ -17,21 +17,21 @@ dnsrecon -d www.google.com -z `DNS recon/enum`
 
 ### WINDOWS cmd stuff
 
-- systeminfo\
-- net users `All users`\
-- dir /b /ad "C:\Users" `directory list`\
-- net user %username% `info about a user (me)`\
-- net accounts `Information about password requirements`\
-- wmic USERACCOUNT Get Domain,Name,Sid\
-- net user /add [username] [password] `Create user`\
-- qwinsta `Anyone else logged in?`\
+- systeminfo
+- net users `All users`
+- dir /b /ad "C:\Users" `directory list`
+- net user %username% `info about a user (me)`
+- net accounts `Information about password requirements`
+- wmic USERACCOUNT Get Domain,Name,Sid
+- net user /add [username] [password] `Create user`
+- qwinsta `Anyone else logged in?`
 - runas /netonly /user<DOMAIN>\<NAME> "cmd.exe" `::The password will be prompted #Lauch new cmd.exe with new creds (to impersonate in network)`
 
-1. Local:\
-- net localgroup `All available groups`\
-- net localgroup Administrators `Info about a group (admins)`\
+1. Local:
+- net localgroup `All available groups`
+- net localgroup Administrators `Info about a group (admins)`
 - net localgroup administrators [username] /add `Add user to administrators`
 
-2. Domain:\
-- net group /domain `info about domain groups`\
+2. Domain:
+- net group /domain `info about domain groups`
 - net group /domain <domain_group_name> `Users that belongs to the group`
