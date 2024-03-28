@@ -2,26 +2,26 @@
 
 *Target Specification*
 
-nmap 192.168.1.1	*Scan a single IP*<br>
-nmap 192.168.1.1 192.168.2.1	*Scan specific IPs*<br>
-nmap 192.168.1.1-254	*Scan a range*<br>
-nmap scanme.nmap.org	*Scan a domain*<br>
-nmap 192.168.1.0/24	*Scan using CIDR notation*<br>
+nmap 192.168.1.1	            Scan a single IP<br>
+nmap 192.168.1.1 192.168.2.1	Scan specific IPs<br>
+nmap 192.168.1.1-254	        Scan a range<br>
+nmap scanme.nmap.org	        Scan a domain<br>
+nmap 192.168.1.0/24	            Scan using CIDR notation<br>
 
--iL	nmap -iL targets.txt	*Scan targets from a file*<br>
--iR	nmap -iR 100	*Scan 100 random hosts*<br>
--exclude	nmap -exclude 192.168.1.1	*Exclude listed hosts*<br>
+-iL	nmap -iL targets.txt	            Scan targets from a file<br>
+-iR	nmap -iR 100	                    Scan 100 random hosts<br>
+-exclude	nmap -exclude 192.168.1.1	Exclude listed hosts<br>
 
 **Nmap Scan Techniques**
 
--sS	nmap 192.168.1.1 -sS	*TCP SYN port scan (Default)*
--sT	nmap 192.168.1.1 -sT	*TCP connect port scan (Default without root privilege)*
--sU	nmap 192.168.1.1 -sU	*UDP port scan*
--sA	nmap 192.168.1.1 -sA	*TCP ACK port scan*
--sW	nmap 192.168.1.1 -sW	*TCP Window port scan*
--sM	nmap 192.168.1.1 -sM	*TCP Maimon port scan*
+-sS	nmap 192.168.1.1 -sS	TCP SYN port scan (Default)<br>
+-sT	nmap 192.168.1.1 -sT	TCP connect port scan (Default without root privilege)<br>
+-sU	nmap 192.168.1.1 -sU	UDP port scan<br>
+-sA	nmap 192.168.1.1 -sA	TCP ACK port scan<br>
+-sW	nmap 192.168.1.1 -sW	TCP Window port scan<br>
+-sM	nmap 192.168.1.1 -sM	TCP Maimon port scan<br>
 
-Host Discovery
+**Host Discovery**
 
 -sL	nmap 192.168.1.1-3 -sL	No Scan. List targets only
 -sn	nmap 192.168.1.1/24 -sn	Disable port scanning. Host discovery only.
