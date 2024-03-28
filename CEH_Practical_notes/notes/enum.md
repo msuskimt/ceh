@@ -17,9 +17,9 @@ dnsrecon -d www.google.com -z `DNS recon/enum`
 
 ### WINDOWS cmd stuff
 
-```systeminfo
-net users ::All users
-dir /b /ad "C:\Users" # directory list
+systeminfo
+net users `All users`
+dir /b /ad "C:\Users" `directory list`
 net user %username% #Info about a user (me)
 net accounts #Information about password requirements
 wmic USERACCOUNT Get Domain,Name,Sid
@@ -35,4 +35,3 @@ net localgroup administrators [username] /add #Add user to administrators
 Domain:
 net group /domain #Info about domain groups
 net group /domain <domain_group_name> #Users that belongs to the group
-```
