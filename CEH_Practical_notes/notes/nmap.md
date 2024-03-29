@@ -126,6 +126,7 @@ nmap -p80 -script http-sql-injection scanme.nmap.org	`Check for SQL injections`
 ### Helpful Nmap Output examples
 
 nmap -p389 –sV <target_IP> `Find the FQDN in a subnet/network`\
+nmap -p 3389 -iL ip.txt | grep open `ip.txt contains all the alive hosts from target subnet`
 nmap -p80 -sV -oG - -open 192.168.1.1/24 | grep open	`Scan for web servers and grep to show which IPs are running web servers`\
 nmap -iR 10 -n -oX out.xml | grep "Nmap" | cut -d " " -f5 > live-hosts.txt	`Generate a list of the IPs of live hosts`\
 nmap -iR 10 -n -oX out2.xml | grep "Nmap" | cut -d " " -f5 >> live-hosts.txt	`Append IP to the list of live hosts`\
