@@ -5,12 +5,13 @@
 
 `john the ripper`
 
-john --single --format=raw-sha1 hash.txt
-john --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha1 hash.txt
-john --format=lm hash.txt `windows lm/ntlm hash from SAM`
+john --single --format=raw-sha1 hash.txt\
+john --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha1 hash.txt\
+john --format=lm hash.txt `windows lm/ntlm hash from SAM`\
 zip2john file.zip > zip.hashes && john zip.hashes
 
-#formats
+`formats`
+
 john --format=des test.txt `DES-based (Traditional Unix) Crypt`\
 john --format=md5crypt test.txt `MD5 Crypt`\
 john --format=bcrypt test.txt `bcrypt (Blowfish Crypt)`\
@@ -21,6 +22,18 @@ john --format=nt test.txt `NTLM (Microsoft Windows)`\
 john --format=lm test.txt `LM (Microsoft Windows)`\
 john --format=krb5tgs test.txt `Kerberos 5 TGT (krb5tgs)`
 
+`hashcat`
+
+hashcat -m 0 hashes.txt wordlist.txt `Atak słownikowy na hasła zaszyfrowane za pomocą algorytmu MD5`
+
+`formats`
+
+SHA-1: -m 100\
+bcrypt (Blowfish Crypt): -m 3200\
+SHA-256: -m 1400\
+SHA-512:-m 1800\
+LM: -m 3000\
+NTLM -m 1000\
 
 ### #tools
 
