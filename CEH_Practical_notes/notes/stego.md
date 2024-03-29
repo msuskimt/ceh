@@ -29,8 +29,10 @@ openstego `gui tool`\
 ### ADS - Alternate Data Streams
 
 `add`
+
 echo "Dane ukryte" > "plik.txt:HiddenData"
 
 `extract`
+
 Get-Content -Path "plik.txt" -Stream "HiddenData"\
 streams.exe `z pakietu sysinternals`
