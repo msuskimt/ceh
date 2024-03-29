@@ -36,7 +36,7 @@ SHA-512:-m 1800\
 LM: -m 3000\
 NTLM -m 1000
 
-### online crack
+### #online crack
 
 `hydra`
 
@@ -47,5 +47,6 @@ hydra -l username -P list.txt http-post-form "http://target_ip/login.php:user=^U
 
 ### #tools
 
-`CrypTool` - https://www.cryptool.org/en/ct1/downloads
-`hashes databases` - https://hashes.com/en/decrypt/hash
+`CrypTool` - https://www.cryptool.org/en/ct1/downloads \
+`hashes databases` - https://hashes.com/en/decrypt/hash \
+`hashes databases` - https://crackstation.net/

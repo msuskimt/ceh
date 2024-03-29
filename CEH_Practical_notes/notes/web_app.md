@@ -18,4 +18,9 @@ set RPORT PORT\
 set TARGETURI http://IP:PORT/\
 set USERNAME user
 
+`directory brute`
+
+gobuster dir -u WWW_IP\domain -w /path/to/wordlist.txt `directories`\
+gobuster dns -d WWW_IP\domain -w awesome_wordlist.txt -i `subdomains`\
+gobuster vhost -u WWW_IP\domain -w awesome_wordlist.txt `subdomains`
 
