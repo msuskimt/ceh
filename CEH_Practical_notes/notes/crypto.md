@@ -7,7 +7,8 @@
 
 john --single --format=raw-sha1 hash.txt\
 john --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha1 hash.txt\
-john --format=lm hash.txt `windows lm/ntlm hash from SAM`\
+john --format=lm hash.txt `windows lm/ntlm hash from SAM`
+
 zip2john file.zip > zip.hashes && john zip.hashes
 
 `formats`
@@ -33,8 +34,18 @@ bcrypt (Blowfish Crypt): -m 3200\
 SHA-256: -m 1400\
 SHA-512:-m 1800\
 LM: -m 3000\
-NTLM -m 1000\
+NTLM -m 1000
+
+### online crack
+
+`hydra`
+
+hydra -l user -P list.txt ftp://10.10.10.10 `ssh smtp pop3 imap`\
+hydra -l username -P list.txt http://target_ip http-get /protected-page\
+hydra -l username -P list.txt http-post-form "http://target_ip/login.php:user=^USER^&pass=^PASS^:Login failed"
+
 
 ### #tools
 
 `CrypTool` - https://www.cryptool.org/en/ct1/downloads
+`hashes databases` - https://hashes.com/en/decrypt/hash
