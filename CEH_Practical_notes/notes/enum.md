@@ -49,3 +49,6 @@ dnsrecon -d www.google.com -z `DNS recon/enum`
 - net view \\computer /ALL `List shares of a computer`
 - net use x: \\computer\share `Mount the share locally`
 - net share `Check current shares`
+
+`5. Powershell`
+- $env:USERDNSDOMAIN `get FQDN`
