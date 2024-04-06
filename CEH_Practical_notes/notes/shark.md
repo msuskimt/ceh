@@ -6,6 +6,9 @@ ip.src == 192.168.1.1/16 `Filtruj komunikację IP z SIECI 192.168.1.1 jako ADRES
 ip.dst == 192.168.1.1 `Filtruj komunikację z IP 192.168.1.1 jako ADRES DOCELOWY`\
 tcp.flags.syn == 1 and tcp.flags.ack == 0    `(How many machines) or Go to statistics IPv4 addresses--> Source and Destination ---> Then you can apply the filter given`\
 tcp.flags.syn == 1   `(Which machine for dos)`\
+select_packet > follow > TCP Stream `Wireshark provides the feature of reassembling a stream of plain text protocol packets into a human-readable format`\
+Statistics and Select Conversations , sort by packets in IPv4 based on number of Packets transfer `To the Find DOS & DDOS1`\
+Statistics > Conversations > IPv4 > Packets\
 http.request.method == POST   `(for passwords) or click tools ---> credentials`\
 arp.duplicate-address-detected `Filtruj duplikaty pakietów ARP`\
 frame contains "passw0rd" `Pakiety zawierające łańcuch "passw0rd" w dowolnym polu`\
