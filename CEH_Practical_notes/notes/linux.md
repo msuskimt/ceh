@@ -1,5 +1,4 @@
 # [<<< Back to index](../CEH_index.md)
-## Linux
 
 ## PROCESY
 
@@ -17,3 +16,6 @@
 
 
 ### skrypt do wyszukiwania modułuw jadra po podpisie [link](../scripts/sig_key.sh)
+
+### listowanie modułów z zewnetrznych źródeł
+`cat /proc/modules | grep "("`
