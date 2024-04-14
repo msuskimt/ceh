@@ -7,3 +7,4 @@
 5. [Cryptography](notes/crypto.md)
 6. [Wireshark](notes/shark.md)
 7. [SQL Injections](notes/sql.md)
+8. [Linux](notes/linux.md)
