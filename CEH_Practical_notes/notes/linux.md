@@ -19,3 +19,6 @@
 
 ### listowanie modułów z zewnetrznych źródeł
 `cat /proc/modules | grep "("`
+
+### wyszukiawanie plików które maja ustawione ACL
+getfacl -R -s -p /
