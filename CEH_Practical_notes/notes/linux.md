@@ -22,3 +22,6 @@
 
 ### wyszukiawanie plików które maja ustawione ACL
 getfacl -R -s -p /
+
+### wyszukiawanie plików SUID,GUID,SB
+sudo find / -perm /4000 2>/dev/null
